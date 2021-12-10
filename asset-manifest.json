@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-ts-router-redux-template/static/css/main.ef987ead.chunk.css",
+    "main.js": "/react-ts-router-redux-template/static/js/main.d9735f7e.chunk.js",
+    "main.js.map": "/react-ts-router-redux-template/static/js/main.d9735f7e.chunk.js.map",
+    "runtime-main.js": "/react-ts-router-redux-template/static/js/runtime-main.eed77230.js",
+    "runtime-main.js.map": "/react-ts-router-redux-template/static/js/runtime-main.eed77230.js.map",
+    "static/js/2.486f43c1.chunk.js": "/react-ts-router-redux-template/static/js/2.486f43c1.chunk.js",
+    "static/js/2.486f43c1.chunk.js.map": "/react-ts-router-redux-template/static/js/2.486f43c1.chunk.js.map",
+    "index.html": "/react-ts-router-redux-template/index.html",
+    "static/css/main.ef987ead.chunk.css.map": "/react-ts-router-redux-template/static/css/main.ef987ead.chunk.css.map",
+    "static/js/2.486f43c1.chunk.js.LICENSE.txt": "/react-ts-router-redux-template/static/js/2.486f43c1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eed77230.js",
+    "static/js/2.486f43c1.chunk.js",
+    "static/css/main.ef987ead.chunk.css",
+    "static/js/main.d9735f7e.chunk.js"
+  ]
+}
