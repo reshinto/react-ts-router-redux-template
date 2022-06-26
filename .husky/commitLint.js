@@ -1,9 +1,9 @@
 const fs = require("fs");
 const path = require("path");
+const pjson = require("../package.json");
 
-// Manually change projectAcronym
-const ruleCommit = "\\[((TEMPLATE)-(\\d)+)\\]:\\s\\w";
-const projectAcronym = "TEMPLATE";
+const projectAcronym = pjson.acronym;
+const ruleCommit = `\\[((${projectAcronym})-(\\d)+)\\]:\\s\\w`;
 
 const regExpCommit = new RegExp(ruleCommit, "g");
 

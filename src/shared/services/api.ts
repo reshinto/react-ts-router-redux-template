@@ -6,11 +6,11 @@ import { Url } from "./url";
 
 export const posts = {
   getAll: () => ApiClient.get(new Url(`${ROOT_ENDPOINTS.posts}`)),
-  get: (postId: any) =>
+  get: (postId: number) =>
     ApiClient.get(new Url(`${ROOT_ENDPOINTS.posts}/${postId}`)),
   post: (data: any) => ApiClient.post(new Url(`${ROOT_ENDPOINTS.posts}`), data),
-  put: (postId: any, data: any) =>
+  put: (postId: number, data: any) =>
     ApiClient.put(new Url(`${ROOT_ENDPOINTS.posts}/${postId}`), data),
-  delete: (postId: any) =>
+  delete: (postId: number) =>
     ApiClient.get(new Url(`${ROOT_ENDPOINTS.posts}/${postId}`)),
 };

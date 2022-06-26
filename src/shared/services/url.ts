@@ -4,12 +4,12 @@ import transform from "lodash/transform";
 import { getUrlWithQueryTypes } from "./types";
 
 export class Url {
-  url: string;
+  url: string = "";
 
   params: any;
 
-  constructor(url = "", params?: any) {
-    this.url = url;
+  constructor(url: string, params?: any) {
+    this.url = url || "";
     this.params = params;
   }
 
@@ -22,7 +22,7 @@ export class Url {
 
     paramsStr += transform(
       this.params,
-      (result: any, value: any, key: any) => {
+      (result: any, value: any, key: string) => {
         result.push(`${key}=${value}`);
       },
       [],

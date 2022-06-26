@@ -1,4 +1,4 @@
-import Action from "./ActionHelper";
+import Action from "../ActionHelper";
 
 describe("Action Helpers", () => {
   const action = new Action("GET_DATA");

@@ -1,6 +1,6 @@
-import { getUrlWithQuery, Url } from "./url";
+import { getUrlWithQuery, Url } from "../url";
 
-import { getUrlWithQueryParamTypes } from "./types";
+import { getUrlWithQueryParamTypes } from "../types";
 
 describe("Url", () => {
   it("Should return formatted url with params", () => {

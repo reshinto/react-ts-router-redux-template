@@ -10,5 +10,6 @@ module.exports = {
     "react/button-has-type": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "react/react-in-jsx-scope": "off",
+    "react/function-component-definition": "off",
   },
 };

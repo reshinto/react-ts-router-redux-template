@@ -1,11 +1,11 @@
 const fs = require("fs");
 const path = require("path");
+const pjson = require("../package.json");
 
-// Manually change projectAcronym
-const ruleBranch = /^(feature|bugfix|improvement|library|prerelease|release|hotfix)\/TEMPLATE-(\d+)[a-z0-9._-]+$/;
-const projectAcronym = "TEMPLATE";
+const projectAcronym = pjson.acronym;
+const ruleBranch = `^(feature|bugfix|improvement|library|prerelease|release|hotfix)\/${projectAcronym}-(\\d+)[a-z0-9._-]+$`;
 
-const regExpBranch = new RegExp(ruleBranch);
+const regExpBranch = new RegExp(ruleBranch, "g");
 
 const msg = `
   # Invalid branch name!

@@ -8,15 +8,21 @@
 
 ## After removing ```.git```
 - Install husky
-> yarn prepare
+  > yarn prepare
 - Re-install poetic
-> npx poetic
+  > npx poetic
 - restore the following files to get back settings
-  - ```.eslintignore```
-	- ```.eslintrc.js```
-	- ```.prettierrc.js```
-	- ```tsconfig.json```
+  - `.eslintignore`
 
+  - `.eslintrc.js`
+
+  - `.prettierrc.js`
+
+  - `tsconfig.json`
+
+## Deployment to github pages
+- modify `homepage` in package.json to
+  - `http://{githubUsername}.github.io/githubRepoName`
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 

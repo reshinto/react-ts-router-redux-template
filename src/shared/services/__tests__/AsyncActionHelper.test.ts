@@ -1,4 +1,4 @@
-import AsyncAction from "./AsyncActionHelper";
+import AsyncAction from "../AsyncActionHelper";
 
 describe("Action Helpers", () => {
   const asyncAction = new AsyncAction(`GET_ASYNC_DATA`);

@@ -2,7 +2,7 @@ import {
   isJsonContentType,
   modifyHeaders,
   updateBodyOrHeader,
-} from "./apiClientHelper";
+} from "../apiClientHelper";
 
 describe("isJsonContentType", () => {
   it("Should be true for json content types", () => {

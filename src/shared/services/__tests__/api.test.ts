@@ -1,5 +1,5 @@
-import ApiClient from "./ApiClient";
-import { posts } from "./api";
+import ApiClient from "../ApiClient";
+import { posts } from "../api";
 
 describe("posts CRUD", () => {
   it("getAll", async () => {

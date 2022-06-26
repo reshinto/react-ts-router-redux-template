@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import fetchMock from "fetch-mock/es5/client";
 
-import apiClient from "./ApiClient";
+import apiClient from "../ApiClient";
 
 describe("apiClient", () => {
   it("Should retrieve parsed json", () => {
