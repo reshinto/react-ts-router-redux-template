@@ -12,11 +12,11 @@
 
 //   expect(getByText(/Posts/i)).toBeInTheDocument();
 // });
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import App from "../index";
 
 it("renders App component", () => {
-  const { getByText } = render(<App />);
+  render(<App />);
 
-  expect(getByText(/Login/i)).toBeInTheDocument();
+  expect(screen.getByText(/Login/i)).toBeInTheDocument();
 });

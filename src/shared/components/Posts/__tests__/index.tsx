@@ -1,8 +1,13 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import * as reactRedux from "react-redux";
 import { containerId } from "../reducer";
 import Posts from "../index";
+
+jest.mock("react-redux", () => ({
+  ...jest.requireActual("react-redux"),
+  useSelector: jest.fn(),
+}));
 
 describe("Posts", () => {
   const selector =
@@ -35,9 +40,9 @@ describe("Posts", () => {
     );
     const dispatch = jest.fn();
     jest.spyOn(reactRedux, "useDispatch").mockReturnValue(dispatch);
-    const { getByText } = render(<Posts />);
+    render(<Posts />);
 
-    expect(getByText("Loading")).toBeInTheDocument();
+    expect(screen.getByText("Loading")).toBeInTheDocument();
     expect(dispatch).toHaveBeenCalledTimes(2);
   });
 
@@ -50,9 +55,9 @@ describe("Posts", () => {
     );
     const dispatch = jest.fn();
     jest.spyOn(reactRedux, "useDispatch").mockReturnValue(dispatch);
-    const { getByText } = render(<Posts />);
+    render(<Posts />);
 
-    expect(getByText("test")).toBeInTheDocument();
+    expect(screen.getByText("test")).toBeInTheDocument();
     expect(dispatch).toHaveBeenCalledTimes(2);
   });
 });

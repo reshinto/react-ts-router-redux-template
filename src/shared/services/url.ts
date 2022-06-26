@@ -4,7 +4,7 @@ import transform from "lodash/transform";
 import { getUrlWithQueryTypes } from "./types";
 
 export class Url {
-  url: string = "";
+  url = "";
 
   params: any;
 
